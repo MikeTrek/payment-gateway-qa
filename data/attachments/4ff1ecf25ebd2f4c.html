@@ -1,0 +1,117 @@
+<div>Status code 200 </div>
+
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;order&quot;: {
+        &quot;order_id&quot;: &quot;test_1ba15aba&quot;,
+        &quot;amount&quot;: 1099,
+        &quot;currency&quot;: &quot;USD&quot;,
+        &quot;mid&quot;: &quot;701077d2-9a4c-480b-a550-a83988a7e248&quot;,
+        &quot;descriptor&quot;: &quot;AQA task&quot;,
+        &quot;fraudulent&quot;: false,
+        &quot;marketing_amount&quot;: 1099,
+        &quot;marketing_currency&quot;: &quot;USD&quot;,
+        &quot;processing_amount&quot;: 1099,
+        &quot;processing_currency&quot;: &quot;USD&quot;,
+        &quot;status&quot;: &quot;auth_failed&quot;,
+        &quot;refunded_amount&quot;: 0,
+        &quot;authorized_amount&quot;: 0,
+        &quot;order_description&quot;: &quot;Test payment&quot;,
+        &quot;customer_email&quot;: &quot;qa.test@example.com&quot;,
+        &quot;customer_account_id&quot;: &quot;9ac81dc022198c9868835824eb98fe5c&quot;,
+        &quot;ip_address&quot;: &quot;135.232.177.200&quot;,
+        &quot;payment_method&quot;: &quot;card&quot;,
+        &quot;psp_order_id&quot;: &quot;16955402446a90b2baa28e4&quot;,
+        &quot;provider_payment_id&quot;: &quot;195eae5d-ef4d-4bb4-ac14-4264b691b58d&quot;
+    },
+    &quot;pay_form&quot;: {
+        &quot;token&quot;: &quot;2e8477ab3b1faac318a21116857a4295f6856e446a90b2baa283d&quot;,
+        &quot;form_url&quot;: &quot;https://form.solidgate.com/api/v1/purchase/2e8477ab3b1faac318a21116857a4295f6856e446a90b2baa283d&quot;
+    },
+    &quot;payment_adviser&quot;: {
+        &quot;advise&quot;: &quot;pay&quot;
+    },
+    &quot;error&quot;: {
+        &quot;code&quot;: &quot;0.01&quot;,
+        &quot;messages&quot;: [
+            &quot;General decline&quot;
+        ],
+        &quot;recommended_message_for_user&quot;: &quot;General decline&quot;
+    },
+    &quot;redirect_url&quot;: &quot;https://payment-page.solidgate.com/0c123ae2-02f8-4a11-928b-4805f3acbd8a&quot;,
+    &quot;device_info&quot;: {
+        &quot;user_agent&quot;: &quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36&quot;
+    },
+    &quot;transactions&quot;: {
+        &quot;d868764d0fc229078bbb66970d49a0636a90b2baa2859&quot;: {
+            &quot;id&quot;: &quot;d868764d0fc229078bbb66970d49a0636a90b2baa2859&quot;,
+            &quot;operation&quot;: &quot;auth&quot;,
+            &quot;status&quot;: &quot;fail&quot;,
+            &quot;descriptor&quot;: &quot;AQA task&quot;,
+            &quot;amount&quot;: 1099,
+            &quot;currency&quot;: &quot;USD&quot;,
+            &quot;created_at&quot;: &quot;2026-08-27 21:57:14&quot;,
+            &quot;updated_at&quot;: &quot;2026-08-27 21:57:15&quot;,
+            &quot;marketing_amount&quot;: 1099,
+            &quot;marketing_currency&quot;: &quot;USD&quot;,
+            &quot;card&quot;: {
+                &quot;bin&quot;: &quot;455381&quot;,
+                &quot;brand&quot;: &quot;VISA&quot;,
+                &quot;number&quot;: &quot;455381XXXXXX3315&quot;,
+                &quot;bank&quot;: &quot;ARAB BANKING CORPORATION (JORDAN)&quot;,
+                &quot;country&quot;: &quot;JOR&quot;,
+                &quot;card_exp_month&quot;: &quot;08&quot;,
+                &quot;card_exp_year&quot;: 2029,
+                &quot;card_type&quot;: &quot;CREDIT&quot;,
+                &quot;card_token&quot;: {
+                    &quot;token&quot;: &quot;de6e8aad56b43ca25a6ed10ffafdff0056c95f8079ba8dbceeee93043e52a873b03865a6d6e1f8459cb924b17703f5a42978&quot;
+                },
+                &quot;card_id&quot;: &quot;002bdfd5-b42f-42a8-82a5-0f1db951011b&quot;
+            },
+            &quot;card_token&quot;: {
+                &quot;token&quot;: &quot;de6e8aad56b43ca25a6ed10ffafdff0056c95f8079ba8dbceeee93043e52a873b03865a6d6e1f8459cb924b17703f5a42978&quot;
+            },
+            &quot;error&quot;: {
+                &quot;code&quot;: &quot;0.01&quot;,
+                &quot;messages&quot;: [
+                    &quot;General decline&quot;
+                ],
+                &quot;recommended_message_for_user&quot;: &quot;General decline&quot;
+            },
+            &quot;authorization_type&quot;: &quot;final&quot;
+        }
+    },
+    &quot;three_ds&quot;: {
+        &quot;eci&quot;: null,
+        &quot;flow&quot;: null,
+        &quot;exception&quot;: null
+    },
+    &quot;routing&quot;: {
+        &quot;cascade_steps&quot;: [
+            {
+                &quot;mid&quot;: &quot;701077d2-9a4c-480b-a550-a83988a7e248&quot;,
+                &quot;mid_descriptor&quot;: &quot;AQA task&quot;,
+                &quot;route_id&quot;: &quot;fpm_16084c55145444eda9c7d6dab10c34a3&quot;,
+                &quot;cascade_number&quot;: 1,
+                &quot;segment_id&quot;: &quot;b133e409-df83-4d68-af35-35e0d44ac510&quot;,
+                &quot;legal_entity_id&quot;: 284,
+                &quot;legal_entity_name&quot;: &quot;FAKE&quot;
+            }
+        ]
+    }
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Connection: keep-alive</div>
+        <div>X-Robots-Tag: noindex</div>
+        <div>Content-Length: 2453</div>
+        <div>Date: Thu, 27 Aug 2026 21:57:19 GMT</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
