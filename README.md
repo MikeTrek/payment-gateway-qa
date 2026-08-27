@@ -98,7 +98,7 @@ src/
 Checkstyle → API tests → UI tests → Quarantine (non-gating) → Allure report → GitHub Pages deploy
 ```
 
-Live report: `https://<username>.github.io/payment-gateway-qa/`
+Live report: https://miketrek.github.io/payment-gateway-qa/
 
 ## What I Chose Not to Test — and Why
 
