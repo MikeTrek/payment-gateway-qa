@@ -1,0 +1,29 @@
+<div>POST to https://pay.solidgate.com/api/v1/refund</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+{
+    &quot;order_id&quot;: &quot;test_9735b4ff&quot;,
+    &quot;amount&quot;: 500
+}    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>merchant: api_pk_9d799dbd_b090_438e_b9dc_9db18bfd4d8a</div>
+            <div>Accept: application/json, application/javascript, text/javascript, text/json</div>
+            <div>signature: MTY5ZGNkYmUxMGQzZGJkMGJjYTYxYjYyYWRjMGNiYzM1M2QyMDczYjgzMjE0MDc1YWI1MzQ0YWU5N2Y5ZmQxOWVmYjAzNTM3Yjg3ZjgzMjk2YmNlOTNkY2I3YzBmNTQ5MzU4ZTFkOGM3NmUxYzBkMzAyZjMwODE5Njc4MmRkY2E=</div>
+            <div>Content-Type: application/json</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X POST &#39;https://pay.solidgate.com/api/v1/refund&#39; -H &#39;merchant: api_pk_9d799dbd_b090_438e_b9dc_9db18bfd4d8a&#39; -H &#39;Accept: application/json, application/javascript, text/javascript, text/json&#39; -H &#39;signature: MTY5ZGNkYmUxMGQzZGJkMGJjYTYxYjYyYWRjMGNiYzM1M2QyMDczYjgzMjE0MDc1YWI1MzQ0YWU5N2Y5ZmQxOWVmYjAzNTM3Yjg3ZjgzMjk2YmNlOTNkY2I3YzBmNTQ5MzU4ZTFkOGM3NmUxYzBkMzAyZjMwODE5Njc4MmRkY2E=&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;order_id&quot;: &quot;test_9735b4ff&quot;,
+    &quot;amount&quot;: 500
+}&#39;
+    </div>
+
