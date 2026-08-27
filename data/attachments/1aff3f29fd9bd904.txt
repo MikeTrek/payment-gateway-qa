@@ -1,0 +1,3 @@
+raw text: $10.99
+parsed amount: 10.99
+parsed currency: USD

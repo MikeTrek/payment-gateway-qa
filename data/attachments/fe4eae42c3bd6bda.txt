@@ -1,0 +1,3 @@
+raw text: $5.00
+parsed amount: 5.00
+parsed currency: USD
