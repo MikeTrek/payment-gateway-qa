@@ -2,7 +2,6 @@ package com.solidgate.api;
 
 import com.solidgate.config.ConfigProvider;
 import com.solidgate.model.InitPaymentRequest;
-import com.solidgate.model.RefundRequest;
 import com.solidgate.model.StatusRequest;
 import io.qameta.allure.Step;
 import io.qameta.allure.restassured.AllureRestAssured;
@@ -53,19 +52,6 @@ public class SolidgateApiClient {
         .header("signature", signature)
         .body(jsonBody)
         .post("/status");
-  }
-
-  @Step("API: Refund order {orderId}, amount={amount}")
-  public Response refundOrder(String orderId, int amount) {
-    String jsonBody = new RefundRequest(orderId, amount).toJson();
-    String signature = SignatureGenerator.generate(publicKey, jsonBody, secretKey);
-
-    return baseRequest()
-        .baseUri(payBaseUrl)
-        .header("merchant", publicKey)
-        .header("signature", signature)
-        .body(jsonBody)
-        .post("/refund");
   }
 
   private RequestSpecification baseRequest() {

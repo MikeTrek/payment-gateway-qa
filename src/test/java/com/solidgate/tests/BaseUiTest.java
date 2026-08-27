@@ -16,7 +16,6 @@ import io.qameta.allure.Step;
 import io.qameta.allure.selenide.AllureSelenide;
 import io.restassured.response.Response;
 import org.awaitility.Awaitility;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -47,38 +46,21 @@ abstract class BaseUiTest {
   private java.math.BigDecimal displayedAmountOnPage;
   private java.util.Optional<String> displayedCurrencyOnPage;
 
-  // Same Chrome everywhere via Testcontainers, opt-in: -Duse.testcontainers=true.
-  // Defaults to a locally installed Chrome so a plain `./mvnw test -Dgroups=ui` keeps
-  // working on a machine without Docker.
-  private static final boolean USE_TESTCONTAINERS =
-      Boolean.getBoolean("use.testcontainers") || Boolean.getBoolean("selenide.remote");
-
   @BeforeAll
   static void setupBrowser() {
-    if (USE_TESTCONTAINERS) {
-      ContainerBrowserFactory.start();
-    } else {
-      Configuration.browser = CONFIG.browser();
-      Configuration.headless = CONFIG.headless();
-      Configuration.timeout = CONFIG.timeout();
-      Configuration.browserCapabilities.setCapability("goog:chromeOptions",
-          Map.of("args", List.of(
-              "--no-sandbox",
-              "--disable-dev-shm-usage",
-              "--disable-gpu",
-              "--remote-allow-origins=*"
-          )));
-    }
+    Configuration.browser = CONFIG.browser();
+    Configuration.headless = CONFIG.headless();
+    Configuration.timeout = CONFIG.timeout();
+    Configuration.browserCapabilities.setCapability("goog:chromeOptions",
+        Map.of("args", List.of(
+            "--no-sandbox",
+            "--disable-dev-shm-usage",
+            "--disable-gpu",
+            "--remote-allow-origins=*"
+        )));
     SelenideLogger.addListener("allure", new AllureSelenide()
         .screenshots(true)
         .savePageSource(true));
-  }
-
-  @AfterAll
-  static void teardownBrowser() {
-    if (USE_TESTCONTAINERS) {
-      ContainerBrowserFactory.stop();
-    }
   }
 
   @BeforeEach
