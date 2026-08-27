@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["order", "transactions"],
+  "properties": {
+    "order": {
+      "type": "object",
+      "required": ["order_id", "status", "amount", "currency"],
+      "properties": {
+        "order_id": { "type": "string" },
+        "status": { "type": "string" },
+        "amount": { "type": "integer" },
+        "currency": { "type": "string", "minLength": 3, "maxLength": 3 },
+        "refunded_amount": { "type": "integer" },
+        "marketing_amount": { "type": ["number", "integer"] },
+        "marketing_currency": { "type": "string" },
+        "payment_method": { "type": "string" }
+      }
+    },
+    "transactions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["id", "operation", "status", "amount", "currency"],
+        "properties": {
+          "id": { "type": "string" },
+          "operation": { "type": "string" },
+          "status": { "type": "string" },
+          "amount": { "type": "integer" },
+          "currency": { "type": "string" }
+        }
+      }
+    }
+  }
+}

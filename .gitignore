@@ -1,0 +1,10 @@
+target/
+.idea/
+*.iml
+.vscode/
+*.log
+allure-results/
+ci-monitor.ps1
+
+ci-allure/
+ci-surefire/

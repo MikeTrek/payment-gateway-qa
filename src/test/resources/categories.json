@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Payment processing errors",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*Element not found.*"
+  },
+  {
+    "name": "API connection issues",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*Connection refused.*"
+  },
+  {
+    "name": "Status polling timeout",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*ConditionTimeoutException.*"
+  }
+]
