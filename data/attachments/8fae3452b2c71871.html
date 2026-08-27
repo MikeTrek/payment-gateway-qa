@@ -1,0 +1,27 @@
+<div>POST to https://pay.solidgate.com/api/v1/status</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+{
+    &quot;order_id&quot;: &quot;test_71406b0d&quot;
+}    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>merchant: api_pk_9d799dbd_b090_438e_b9dc_9db18bfd4d8a</div>
+            <div>Accept: application/json, application/javascript, text/javascript, text/json</div>
+            <div>signature: MjZhMTFmYTc3NTBmZDQzN2UxNTNjMmUxNGM3OGQ5OTY4YWJmOTM4ZWVlNTc5MWQzODgyNmI5YjJhZjJlMzNhYWYzMzk2MTJiZDhkM2M5MzI0MWJhNjhmNzZhZjNmYzUzMjI4M2I5YjdlZGI4NTM3NjExZjYxZTU3Y2I3NmY3YmU=</div>
+            <div>Content-Type: application/json</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X POST &#39;https://pay.solidgate.com/api/v1/status&#39; -H &#39;merchant: api_pk_9d799dbd_b090_438e_b9dc_9db18bfd4d8a&#39; -H &#39;Accept: application/json, application/javascript, text/javascript, text/json&#39; -H &#39;signature: MjZhMTFmYTc3NTBmZDQzN2UxNTNjMmUxNGM3OGQ5OTY4YWJmOTM4ZWVlNTc5MWQzODgyNmI5YjJhZjJlMzNhYWYzMzk2MTJiZDhkM2M5MzI0MWJhNjhmNzZhZjNmYzUzMjI4M2I5YjdlZGI4NTM3NjExZjYxZTU3Y2I3NmY3YmU=&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;order_id&quot;: &quot;test_71406b0d&quot;
+}&#39;
+    </div>
+
