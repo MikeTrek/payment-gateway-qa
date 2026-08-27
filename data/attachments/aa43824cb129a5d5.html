@@ -1,0 +1,107 @@
+<div>Status code 200 </div>
+
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;order&quot;: {
+        &quot;order_id&quot;: &quot;test_2b176f84&quot;,
+        &quot;amount&quot;: 1099,
+        &quot;currency&quot;: &quot;USD&quot;,
+        &quot;mid&quot;: &quot;701077d2-9a4c-480b-a550-a83988a7e248&quot;,
+        &quot;descriptor&quot;: &quot;AQA task&quot;,
+        &quot;fraudulent&quot;: false,
+        &quot;marketing_amount&quot;: 1099,
+        &quot;marketing_currency&quot;: &quot;USD&quot;,
+        &quot;processing_amount&quot;: 1099,
+        &quot;processing_currency&quot;: &quot;USD&quot;,
+        &quot;status&quot;: &quot;auth_ok&quot;,
+        &quot;refunded_amount&quot;: 0,
+        &quot;authorized_amount&quot;: 1099,
+        &quot;order_description&quot;: &quot;Test payment&quot;,
+        &quot;customer_email&quot;: &quot;qa.test@example.com&quot;,
+        &quot;customer_account_id&quot;: &quot;9ac81dc022198c9868835824eb98fe5c&quot;,
+        &quot;auth_code&quot;: &quot;muXBgp&quot;,
+        &quot;ip_address&quot;: &quot;20.15.229.149&quot;,
+        &quot;payment_method&quot;: &quot;card&quot;,
+        &quot;psp_order_id&quot;: &quot;16953385756a9089dda87fa&quot;,
+        &quot;provider_payment_id&quot;: &quot;b75509fa-c53f-4145-85b5-9d88445d8df1&quot;
+    },
+    &quot;pay_form&quot;: {
+        &quot;token&quot;: &quot;1ce0a18f21345a5421c5981d2a983c3f1a6241156a9089dda8753&quot;,
+        &quot;form_url&quot;: &quot;https://form.solidgate.com/api/v1/purchase/1ce0a18f21345a5421c5981d2a983c3f1a6241156a9089dda8753&quot;
+    },
+    &quot;payment_adviser&quot;: {
+        &quot;advise&quot;: &quot;pay&quot;
+    },
+    &quot;redirect_url&quot;: &quot;https://payment-page.solidgate.com/5a514ba8-3dae-45a5-881e-b8e5ae90858b&quot;,
+    &quot;device_info&quot;: {
+        &quot;user_agent&quot;: &quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36&quot;
+    },
+    &quot;transactions&quot;: {
+        &quot;8cdd683da758aacb655c44162313f7366a9089dda876f&quot;: {
+            &quot;id&quot;: &quot;8cdd683da758aacb655c44162313f7366a9089dda876f&quot;,
+            &quot;operation&quot;: &quot;auth&quot;,
+            &quot;status&quot;: &quot;success&quot;,
+            &quot;descriptor&quot;: &quot;AQA task&quot;,
+            &quot;amount&quot;: 1099,
+            &quot;currency&quot;: &quot;USD&quot;,
+            &quot;created_at&quot;: &quot;2026-08-27 19:02:53&quot;,
+            &quot;updated_at&quot;: &quot;2026-08-27 19:02:53&quot;,
+            &quot;marketing_amount&quot;: 1099,
+            &quot;marketing_currency&quot;: &quot;USD&quot;,
+            &quot;card&quot;: {
+                &quot;bin&quot;: &quot;406742&quot;,
+                &quot;brand&quot;: &quot;VISA&quot;,
+                &quot;number&quot;: &quot;406742XXXXXX9265&quot;,
+                &quot;bank&quot;: &quot;ENTROPAY&quot;,
+                &quot;country&quot;: &quot;MLT&quot;,
+                &quot;card_exp_month&quot;: &quot;08&quot;,
+                &quot;card_exp_year&quot;: 2029,
+                &quot;card_type&quot;: &quot;PREPAID&quot;,
+                &quot;card_token&quot;: {
+                    &quot;token&quot;: &quot;0ca4d41963c0bcadfce599a73b31b9c18c13be5db59a9c713e7b74c5ce55e92edc82c6efa69de767106c4c3b10bf8f82894a&quot;
+                },
+                &quot;card_id&quot;: &quot;4b762938-9020-4625-8ae8-7f63d089c2b5&quot;,
+                &quot;card_category&quot;: &quot;PREPAID&quot;
+            },
+            &quot;card_token&quot;: {
+                &quot;token&quot;: &quot;0ca4d41963c0bcadfce599a73b31b9c18c13be5db59a9c713e7b74c5ce55e92edc82c6efa69de767106c4c3b10bf8f82894a&quot;
+            },
+            &quot;scheme_transaction_id&quot;: &quot;268907212908768&quot;,
+            &quot;transaction_link_id&quot;: &quot;VuOpiCU-TcGnpnaYmfV4Xg&quot;,
+            &quot;authorization_type&quot;: &quot;final&quot;
+        }
+    },
+    &quot;three_ds&quot;: {
+        &quot;eci&quot;: null,
+        &quot;flow&quot;: null,
+        &quot;exception&quot;: null
+    },
+    &quot;routing&quot;: {
+        &quot;cascade_steps&quot;: [
+            {
+                &quot;mid&quot;: &quot;701077d2-9a4c-480b-a550-a83988a7e248&quot;,
+                &quot;mid_descriptor&quot;: &quot;AQA task&quot;,
+                &quot;route_id&quot;: &quot;fpm_16084c55145444eda9c7d6dab10c34a3&quot;,
+                &quot;cascade_number&quot;: 1,
+                &quot;segment_id&quot;: &quot;b133e409-df83-4d68-af35-35e0d44ac510&quot;,
+                &quot;legal_entity_id&quot;: 284,
+                &quot;legal_entity_name&quot;: &quot;FAKE&quot;
+            }
+        ]
+    }
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Connection: keep-alive</div>
+        <div>X-Robots-Tag: noindex</div>
+        <div>Content-Length: 2349</div>
+        <div>Date: Thu, 27 Aug 2026 19:02:57 GMT</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
