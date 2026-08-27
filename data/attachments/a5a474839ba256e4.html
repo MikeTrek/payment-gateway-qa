@@ -1,0 +1,101 @@
+<div>Status code 200 </div>
+
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;order&quot;: {
+        &quot;order_id&quot;: &quot;test_b1d63c9a&quot;,
+        &quot;amount&quot;: 1099,
+        &quot;currency&quot;: &quot;USD&quot;,
+        &quot;mid&quot;: &quot;701077d2-9a4c-480b-a550-a83988a7e248&quot;,
+        &quot;descriptor&quot;: &quot;AQA task&quot;,
+        &quot;fraudulent&quot;: false,
+        &quot;marketing_amount&quot;: 1099,
+        &quot;marketing_currency&quot;: &quot;USD&quot;,
+        &quot;processing_amount&quot;: 1099,
+        &quot;processing_currency&quot;: &quot;USD&quot;,
+        &quot;status&quot;: &quot;auth_ok&quot;,
+        &quot;refunded_amount&quot;: 0,
+        &quot;authorized_amount&quot;: 1099,
+        &quot;order_description&quot;: &quot;Test payment&quot;,
+        &quot;customer_email&quot;: &quot;qa.test@example.com&quot;,
+        &quot;customer_account_id&quot;: &quot;9ac81dc022198c9868835824eb98fe5c&quot;,
+        &quot;auth_code&quot;: &quot;jZajvA&quot;,
+        &quot;ip_address&quot;: &quot;68.154.37.71&quot;,
+        &quot;payment_method&quot;: &quot;card&quot;,
+        &quot;psp_order_id&quot;: &quot;16954763556a90a56c6317e&quot;,
+        &quot;provider_payment_id&quot;: &quot;1f19b83f-5adb-40cf-9e13-f35ec374d421&quot;
+    },
+    &quot;pay_form&quot;: {
+        &quot;token&quot;: &quot;020ded0b690e7bf61c141c138be93c5e6b2d687a6a90a56c630db&quot;,
+        &quot;form_url&quot;: &quot;https://form.solidgate.com/api/v1/purchase/020ded0b690e7bf61c141c138be93c5e6b2d687a6a90a56c630db&quot;
+    },
+    &quot;payment_adviser&quot;: {
+        &quot;advise&quot;: &quot;pay&quot;
+    },
+    &quot;redirect_url&quot;: &quot;https://payment-page.solidgate.com/8d1d69da-e11f-45b4-be52-8dd0483bf2f8&quot;,
+    &quot;device_info&quot;: {
+        &quot;user_agent&quot;: &quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36&quot;
+    },
+    &quot;transactions&quot;: {
+        &quot;e835afb549255a68d5e03bc722b0b2836a90a56c630f2&quot;: {
+            &quot;id&quot;: &quot;e835afb549255a68d5e03bc722b0b2836a90a56c630f2&quot;,
+            &quot;operation&quot;: &quot;auth&quot;,
+            &quot;status&quot;: &quot;success&quot;,
+            &quot;descriptor&quot;: &quot;AQA task&quot;,
+            &quot;amount&quot;: 1099,
+            &quot;currency&quot;: &quot;USD&quot;,
+            &quot;created_at&quot;: &quot;2026-08-27 21:00:29&quot;,
+            &quot;updated_at&quot;: &quot;2026-08-27 21:00:32&quot;,
+            &quot;marketing_amount&quot;: 1099,
+            &quot;marketing_currency&quot;: &quot;USD&quot;,
+            &quot;card&quot;: {
+                &quot;bin&quot;: &quot;497592&quot;,
+                &quot;number&quot;: &quot;497592XXXXXX4980&quot;,
+                &quot;card_exp_month&quot;: &quot;08&quot;,
+                &quot;card_exp_year&quot;: 2029,
+                &quot;card_token&quot;: {
+                    &quot;token&quot;: &quot;1ca73dd7d515e4f28c4e045414cad153e40c2f3db0d02c0dab59f0c71610683c548c31bddf1042fbe2cb7a2a056153a19fc2&quot;
+                },
+                &quot;card_id&quot;: &quot;119b164a-19c1-452f-b95b-9c5fd04f4317&quot;
+            },
+            &quot;card_token&quot;: {
+                &quot;token&quot;: &quot;1ca73dd7d515e4f28c4e045414cad153e40c2f3db0d02c0dab59f0c71610683c548c31bddf1042fbe2cb7a2a056153a19fc2&quot;
+            },
+            &quot;scheme_transaction_id&quot;: &quot;658740575878&quot;,
+            &quot;authorization_type&quot;: &quot;final&quot;
+        }
+    },
+    &quot;three_ds&quot;: {
+        &quot;eci&quot;: &quot;05&quot;,
+        &quot;flow&quot;: &quot;challenge&quot;,
+        &quot;exception&quot;: null
+    },
+    &quot;routing&quot;: {
+        &quot;cascade_steps&quot;: [
+            {
+                &quot;mid&quot;: &quot;701077d2-9a4c-480b-a550-a83988a7e248&quot;,
+                &quot;mid_descriptor&quot;: &quot;AQA task&quot;,
+                &quot;route_id&quot;: &quot;fpm_16084c55145444eda9c7d6dab10c34a3&quot;,
+                &quot;cascade_number&quot;: 1,
+                &quot;segment_id&quot;: &quot;b133e409-df83-4d68-af35-35e0d44ac510&quot;,
+                &quot;legal_entity_id&quot;: 284,
+                &quot;legal_entity_name&quot;: &quot;FAKE&quot;
+            }
+        ]
+    }
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Connection: keep-alive</div>
+        <div>X-Robots-Tag: noindex</div>
+        <div>Content-Length: 2216</div>
+        <div>Date: Thu, 27 Aug 2026 21:00:35 GMT</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
